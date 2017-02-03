@@ -1,0 +1,10 @@
+**/*.sw?
+*.*~
+**/tags
+**/.tern*
+**/.flake8
+__pycache__/
+node_modules/
+rplugin/**/resources/data/
+rplugin/**/resources/lists/
+plugin/
