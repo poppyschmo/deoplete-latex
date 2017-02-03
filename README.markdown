@@ -1,7 +1,7 @@
 deoplete-latex
 ==============
 
-**Warning**
+**Warning**.
 This is not a serious [deoplete][1] source. It's merely a "dumb list" of LaTeX
 commands thrown together ad hoc to assist the infrequent user or LaTeX novice.
 To be clear, **there's no syntax analysis happening here**, no "intellisense"
@@ -17,7 +17,7 @@ below.)
 
 * delegates to [vimtex][2] for *all* completion capabilities offered by the
   plugin (like `\cite{}`, `\ref{}`, etc.), meaning vimtex must be loaded for
-  these to be available
+  these to appear
 
 * completion offerings are LaTeX only; no ConTeXt, Texinfo, etc.
 
@@ -55,7 +55,7 @@ let g:deoplete#sources#latex#include_misc = 1      " default 0
 
 There are far too many niggling issues to list here (and likely some major
 unknown unknowns, as well). Most can safely be attributed to the author's
-overall lack of computer knowhow. (See [dev branch][6] for build scripts.)
+overall lack of computer knowhow.
 
 ### Poor performance
 When editing documents longer than a few pages, especially ones dependent on
@@ -78,5 +78,3 @@ Much like the "mode" issue, most of these are attributable to incomplete or
 erroneous source information, mainly because TeXstudio's cwl roster is
 crowd-sourced and imperfect. Unless some facility for extensibility is
 implemented here, this also won't change.
-
-[6]: https://github.com/poppyschmo/deoplete-latex/tree/dev

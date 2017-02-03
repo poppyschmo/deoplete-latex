@@ -1,0 +1,16 @@
+{
+  "name": "scrape_mathjax",
+  "version": "1.0.0",
+  "description": "Update existing LaTeX list with MathJax data.",
+  "main": "update_mathjax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["LaTeX", "MathJax"],
+  "author": "Poppy Schmo",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^9.8.3",
+    "mathjax-node": "^0.5.1"
+  }
+}
