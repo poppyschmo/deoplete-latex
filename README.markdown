@@ -1,7 +1,7 @@
 deoplete-latex
 ==============
 
-##Warning
+**Warning**
 This is not a serious [deoplete][1] source. It's merely a "dumb list" of LaTeX
 commands thrown together ad hoc to assist the infrequent user or LaTeX novice.
 To be clear, **there's no syntax analysis happening here**, no "intellisense"
@@ -21,15 +21,15 @@ below.)
 
 * completion offerings are LaTeX only; no ConTeXt, Texinfo, etc.
 
-* packages listed in TeXstudio's `.cwl` [repo][3] are included as default
+* packages listed in TeXstudio's [completion repo][3] are included as default
   sources; currently, these are not extensible, (you can't add your own local
-  `.cwl` header), though this could change
+  `.cwl` header files), though this could change
 
 * key/value args and other command options noted in TeXstudio's [cwl spec][4]
   tend to work as expected
 
 * all preview-window doc strings were removed in favor simple signatures; see
-  [vim-latexrefman][5] for full docs integration.
+  [vim-latexrefman][5] for a full docs-integration option
 
 * in-menu Unicode symbols for relevant commands
 
@@ -44,10 +44,10 @@ below.)
 
 ##Global options
 ```vim
-" Include macros like `\ihat` from MathJax and KaTeX.
+" Include macros like `\jhat` from MathJax and KaTeX.
 let g:deoplete#sources#latex#include_web_math = 1  " default 0
 
-" Include 'other' miscellaneous commands, environments, options...
+" Include a hodgepodge of miscellaneous commands and environments.
 let g:deoplete#sources#latex#include_misc = 1      " default 0
 ```
 
@@ -55,15 +55,14 @@ let g:deoplete#sources#latex#include_misc = 1      " default 0
 
 There are far too many niggling issues to list here (and likely some major
 unknown unknowns, as well). Most can safely be attributed to the author's
-overall lack of computer knowhow. (See `dev` branch for build scripts.)
+overall lack of computer knowhow. (See [dev branch][6] for build scripts.)
 
 ### Poor performance
 When editing documents longer than a few pages, especially ones dependent on
 more than a few packages, initial completion suggestions are truncated
 (seemingly arbitrarily). This is accompanied by laggy cursor movement and
 jittery scrolling. Things settle down after a minute or so, but this is
-obviously a deal breaker for non-trivial work and stands as the foremost
-impediment to this becoming a valid deoplete source.
+obviously a deal breaker for non-trivial work.
 
 ### No context awareness re "environment"
 Some commands are only supported in a given environment. These constraints
@@ -80,4 +79,4 @@ erroneous source information, mainly because TeXstudio's cwl roster is
 crowd-sourced and imperfect. Unless some facility for extensibility is
 implemented here, this also won't change.
 
-
+[6]: https://github.com/poppyschmo/deoplete-latex/tree/dev
