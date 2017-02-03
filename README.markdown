@@ -1,6 +1,7 @@
+deoplete-latex
+==============
 
-Warning
-=======
+##Warning
 This is not a serious [deoplete][1] source. It's merely a "dumb list" of LaTeX
 commands thrown together ad hoc to assist the infrequent user or LaTeX novice.
 To be clear, **there's no syntax analysis happening here**, no "intellisense"
@@ -9,6 +10,8 @@ below.)
 
 [1]: https://github.com/Shougo/deoplete.nvim
 
+
+![screenshot](https://cloud.githubusercontent.com/assets/12665556/22585211/7d79bfe4-e9ab-11e6-81d6-258cd598e7ee.png)
 
 ##Features (or lack thereof)
 
@@ -26,7 +29,7 @@ below.)
   tend to work as expected
 
 * all preview-window doc strings were removed in favor simple signatures; see
-  [vim-latexrefman] for full docs integration.
+  [vim-latexrefman][5] for full docs integration.
 
 * in-menu Unicode symbols for relevant commands
 
