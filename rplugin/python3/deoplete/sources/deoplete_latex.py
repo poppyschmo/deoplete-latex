@@ -167,7 +167,7 @@ class Source(Base):
         witgroups = dict(self._find_packages())
         witnessed = witgroups.keys()
         included = set.union(*(set(self._packages[p].get('includes', [])) for
-                               p in witnessed), set())
+                               p in witnessed if p in self._packages), set())
         available = (set(p['word'] for p in self._packs) |
                      set(self._class_names[c['word']] for c in self._clss))
         remainder = ((self._cats['packages'].keys() |
