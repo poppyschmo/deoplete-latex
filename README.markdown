@@ -1,5 +1,7 @@
 deoplete-latex
 ==============
+**Update**.
+[vimtex][2] has been offering command completion for some time now. Please use that instead. Thanks.
 
 **Warning**.
 This is not a serious [deoplete][1] source. It's merely a "dumb list" of LaTeX
@@ -13,7 +15,7 @@ below.)
 
 ![screenshot](https://cloud.githubusercontent.com/assets/12665556/22585211/7d79bfe4-e9ab-11e6-81d6-258cd598e7ee.png)
 
-##Features (or lack thereof)
+## Features (or lack thereof)
 
 * delegates to [vimtex][2] for *all* completion capabilities offered by the
   plugin (like `\cite{}`, `\ref{}`, etc.), meaning vimtex must be loaded for
@@ -42,7 +44,7 @@ below.)
 [5]: https://github.com/poppyschmo/vim-latexrefman
 
 
-##Global options
+## Global options
 ```vim
 " Include macros like `\jhat` from MathJax and KaTeX.
 let g:deoplete#sources#latex#include_web_math = 1  " default 0
@@ -51,7 +53,7 @@ let g:deoplete#sources#latex#include_web_math = 1  " default 0
 let g:deoplete#sources#latex#include_misc = 1      " default 0
 ```
 
-##Issues
+## Issues
 
 There are far too many niggling issues to list here (and likely some major
 unknown unknowns, as well). Most can safely be attributed to the author's
