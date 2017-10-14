@@ -154,7 +154,7 @@ class Source(Base):
                 break
             m = up_RE.match(line)
             if m:
-                yield (self._class_names[m.group(3)] if
+                yield (self._class_names.get(m.group(3), m.group(3)) if
                        'class' in m.group(1) else m.group(3)), m.group(2)
 
     def on_event(self, context):
